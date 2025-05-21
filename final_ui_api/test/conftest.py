@@ -46,6 +46,6 @@ def channels_page(browser):
 def auth_api():
     auth_api = SearchApi(
         base_url='https://api.kinopoisk.dev/',
-        token='VJ1TE02-HRDQ27K-SA1ZPRJ'
+        token='VJ1TE02-HTH4H71-HRDQ27K-SA1ZPRJ'
     )
     return auth_api

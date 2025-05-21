@@ -20,5 +20,4 @@ class ChannelsPage:
     def back_homepage(self, driver):
         logo = WebDriverWait(self.driver, 20).until(
             EC.element_to_be_clickable(By.CLASS_NAME, 'styles_logo__1R5HL'))
-        )
         logo.click()

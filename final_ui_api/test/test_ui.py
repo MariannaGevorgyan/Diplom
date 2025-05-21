@@ -22,13 +22,13 @@ def test_button_entrance(main_page):
 @allure.id("MainPage-2")
 @allure.severity("critical")
 @allure.title("Ввод текста в строку поиск")
-@allure.feature("кнопка 'Поиск'")
-@allure.description("Функциональеость кнопки 'Поиск' на главной странице Кинопоиск")
+@allure.feature("Строка 'Поиск'")
+@allure.description("Функциональеость строки 'Поиск' на главной странице Кинопоиск")
 def test_input(main_page):
     with allure.step("Ввести название фильма в строку поиск"):
       main_page.input_text("Вий")
     with allure.step("Дождаться загрузки элемента на странице"):
-      wait = WebDriverWait(main_page.driver, 20)
+      wait = WebDriverWait(main_page.driver, 30)
       new_element = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'styles_root___4K2i')))
       assert new_element.is_displayed()
 
